@@ -27,7 +27,7 @@ export class BookListPage {
     console.log('ionViewWillEnter');
     this.category=this.navParams.get("category");
     console.log(this.category);
-    this.bookRest.getBooklist().subscribe( data =>{
+    this.bookRest.getbooklist().subscribe( data =>{
       this.books=data.filter(book=>book.category === this.category);
     }
 
